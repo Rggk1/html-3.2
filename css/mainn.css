@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*шрифт*/
+
+}
+.navbar{
+    width: 100%; /*ширина элемента*/
+    height: 60px; /*высота жлемента*/
+    background: rgb(255, 249, 162);
+    display: flex; /*адаптивное отображение + горизонтальное отображение по умолчанию*/
+    align-items: center; /*вертикальное вырвнивание по центру*/
+    justify-content: space-between; /*расположить элементы на равном расстоянии между друг другом*/
+}
+.navbar a{ /* а - выбирает всё*/
+    color: white;
+    text-decoration: none; /*убрал декорацию ссылок*/
+    color: black;
+    cursor: pointer; /* курсор в виде руки*/
+}
+.logo{
+    height: 100%;
+    width: 150px;
+}
+.nav-links{
+    display: flex;
+    gap: 20px; /* расстояние между ссылками*/
+}
+.nav-links a:hover{ /* hover - при наведении */
+    opacity: 0.7;
+}
+.profile-btn{
+    height: 100%;
+    width: 20%;
+    border-radius: 50%;
+    border: 6px solid rgb(0, 255, 51);
+}
+.card0{
+display: flex; /* адаптивное отображение + горизонтальное отображенре по умолчанию*/
+gap: 17px; /* расстояние между */
+width: 100%;
+max-width: 1000px; /* максимальная ширина*/
+background: wheat;
+padding: 25px;  /* внутренние отступы*/
+border-radius: 12px; /* скруглённые углы*/
+box-shadow: 0 5px 12px rgba(0,0,0,0.1); /*лёгкая тень*/
+}
+.img0{
+max-width: 300px; /* максимальная широта */
+max-height: 300px; /* максимальная высота */
+object-fit: cover; /* картинка не сплющится а обрежется по краям*/
+border-radius: 20px; /*скругление*/
+flex-shrink: 0; /* запрещает картинке сжиматься, если экран маленький*/
+}
+.contentincard0{
+    flex-direction: column;
+    justify-content: center;
+}
+.contentincard0 button{
+    padding: 20px 40px;
+    border: none;
+    background-color: blue;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: larger;
+    transition: background-color 0.3s;
+}
+.contentincard0 button:hover{
+    background-color: aquamarine;
+}
+.card1{
+display: flex;
+gap: 20px;
+width: 100%;
+max-width: 1000px;
+background: wheat;
+padding: 30px;
+border-radius: 20px;
+flex-direction: column;
+gap: 20px;
+}
